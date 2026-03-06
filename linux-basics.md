@@ -1,22 +1,18 @@
 # Linux Basics – TryHackMe
 
-## Цел
-Да науча основни Linux команди.
+## Goal
+To learn the basic Linux commands.
 
-## Команди които използвах
-ls
-cd
-mkdir
-touch
-chmod
-grep
+## Commands I Used
+- `ls` – list files and directories in the current folder  
+- `cd` – change directory  
+- `mkdir` – create a new directory  
+- `touch` – create a new empty file  
+- `chmod` – change file or directory permissions  
+- `grep` – search for text within files  
 
-## Пример
-mkdir test_folder
-cd test_folder
-touch test.txt
-
-## Какво научих
-- как се създават файлове
-- как се сменят права
-- как се навигира във файловата система
+## Example
+```bash
+mkdir test_folder   # create a folder named test_folder
+cd test_folder      # navigate into the folder
+touch test.txt      # create an empty file named test.txt
