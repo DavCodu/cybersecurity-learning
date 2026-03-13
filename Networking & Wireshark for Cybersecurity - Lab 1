@@ -112,5 +112,11 @@ tcp.port == 80
 # Combine filters
 ip.addr == 10.0.2.16 && tcp.port == 80
 
+#Skills Practiced
+Packet capture using Wireshark
+ICMP, DNS, TCP, HTTP protocol analysis
+Understanding network traffic flow
+Filtering and analyzing packets
+Basics of network security monitoring
 
 
