@@ -1,0 +1,116 @@
+# Networking & Wireshark for Cybersecurity - Lab 1
+
+## Goal
+
+The goal of this project is to understand **basic networking traffic analysis** using Wireshark in a safe lab environment.
+
+You will learn how to capture and analyze network packets and understand protocols like:
+
+* ICMP (Ping)
+* DNS
+* TCP
+* HTTP
+
+This knowledge is important for **network troubleshooting, penetration testing, and cybersecurity analysis**.
+
+---
+
+# What I Learned
+
+## ICMP – Internet Control Message Protocol
+
+ICMP is used for sending **control messages** in a network. The most common example is **ping**, which checks if a host is reachable.
+
+### Key Characteristics
+
+* Used for diagnostics and testing network connectivity  
+* Sends **Echo Request** and receives **Echo Reply**  
+* Does not guarantee delivery or reliability  
+
+### Example
+
+Ping `google.com` from your VM and capture the packets in Wireshark. You will see the **source IP** (your VM) and **destination IP** (google.com), along with ICMP packet types.
+
+---
+
+## DNS – Domain Name System
+
+DNS translates **human-readable domain names** into IP addresses.
+
+### Key Characteristics
+
+* Queries and responses are visible in network traffic  
+* Essential for browsing the internet  
+* UDP-based, usually on port 53  
+
+### Example
+
+Open a website in your VM while filtering `dns` in Wireshark. You will see:
+
+* Query → the domain you requested  
+* Response → the resolved IP address  
+
+---
+
+## TCP – Transmission Control Protocol
+
+TCP is a transport protocol that ensures **reliable, ordered communication** between devices.
+
+### Key Characteristics
+
+* **Connection-oriented protocol**  
+* Guarantees packet delivery and order  
+* Uses **three-way handshake** (SYN, SYN-ACK, ACK)  
+
+### Example
+
+Open a website over HTTP while capturing TCP packets in Wireshark. You can observe the **handshake** and the packets carrying page content.
+
+---
+
+## HTTP – Hypertext Transfer Protocol
+
+HTTP is the protocol used to **transfer webpages**. In Wireshark, you can see the **requests and responses**.
+
+### Key Characteristics
+
+* Requests sent from client to server (GET, POST)  
+* Responses sent from server to client  
+* Headers show metadata like content type and size  
+
+### Example
+
+Capture HTTP traffic in Wireshark when opening a non-HTTPS website in your VM. Observe:
+
+* GET request → what the client asks for  
+* Response → what the server sends back  
+
+---
+
+# Lab Exercises
+
+### Exercise 1: Ping & ICMP packets
+```bash
+# Start capture on eth0
+ping google.com
+# Filter in Wireshark
+icmp
+# Filter in Wireshark
+dns
+# Open a website in VM and watch query/response
+# Filter in Wireshark
+http
+# Open http://example.com
+# Filter in Wireshark
+tcp
+# Open a website
+# Observe SYN -> SYN-ACK -> ACK
+# Filter by your VM IP
+ip.addr == 10.0.2.16
+# Filter by port
+tcp.port == 80
+# Combine filters
+ip.addr == 10.0.2.16 && tcp.port == 80
+
+
+
