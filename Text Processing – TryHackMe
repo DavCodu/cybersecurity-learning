@@ -1,0 +1,55 @@
+Text Processing – TryHackMe
+Goal
+
+To learn how to read and search through files using cat and grep.
+
+Topics Covered
+
+Viewing file contents
+
+Searching for text inside files
+
+Basic text processing in Linux
+
+Commands I Used
+
+cat – display the contents of a file
+
+grep – search for specific text inside files
+
+Example
+touch notes.txt
+echo "Hello World" > notes.txt
+echo "Linux is powerful" >> notes.txt
+echo "Cybersecurity is interesting" >> notes.txt
+
+cat notes.txt                     # show file content
+grep "Linux" notes.txt           # search for "Linux"
+grep "Cyber" notes.txt           # search for "Cyber"
+Practice Task
+
+I created a file and searched for specific keywords:
+
+notes.txt
+Hello World
+Linux is powerful
+Cybersecurity is interesting
+
+Used:
+
+grep "Linux" notes.txt
+
+Output:
+
+Linux is powerful
+What I Learned
+
+How to read files using cat
+
+How to search for keywords using grep
+
+How text processing is useful in analyzing data
+
+Platform
+
+Practice completed on TryHackMe – Text Processing
