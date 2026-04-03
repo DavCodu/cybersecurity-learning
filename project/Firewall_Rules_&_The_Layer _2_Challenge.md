@@ -1,4 +1,4 @@
-## Day 3: Firewall Rules & The Layer 2 Challenge
+## Day 4: Firewall Rules & The Layer 2 Challenge
 **Goal:** Implement access control policies on pfSense and monitor network traffic.
 
 ### Technical Accomplishments:
@@ -13,7 +13,7 @@ During testing, `nmap` continued to show Port 22 as `open` despite the firewall 
 * **The Solution for Day 4:** Network segmentation (VLANs or separate subnets) is required to force traffic through the firewall's inspection engine.
 
 ---
-### **Evidence of Day 3 Lab**
+### **Evidence of Day 4 Lab**
 
 #### **1. Firewall Policy Configuration**
 ![Firewall Rule](images/firewall_rule.png)
@@ -33,4 +33,6 @@ During testing, `nmap` continued to show Port 22 as `open` despite the firewall 
 - [x] Target Hardening (Ubuntu + SSH)
 - [x] **New:** Understanding Firewall bypass in flat networks.
 - [ ] **Next Step:** Network Segmentation - Moving the Attacker to a separate subnet to enforce security policies.
+
+
 
