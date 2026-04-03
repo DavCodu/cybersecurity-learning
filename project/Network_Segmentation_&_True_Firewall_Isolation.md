@@ -1,7 +1,7 @@
 # Day 5: Network Segmentation & True Firewall Isolation
 ## Goal
 
-To force all attacker traffic through the pfSense inspection engine by implementing Layer 3 network segmentation, fixing the "Layer 2 bypass" issue from Day 3.
+To force all attacker traffic through the pfSense inspection engine by implementing Layer 3 network segmentation, fixing the "Layer 2 bypass" issue from Day 4.
 ## Network Architecture Change
 
 Yesterday, the laboratory failed to block traffic because both VMs were in the same "room" (Layer 2). Today, I redesigned the topology:
@@ -30,7 +30,7 @@ Yesterday, the laboratory failed to block traffic because both VMs were in the s
 
 ## Results & Verification
 
-Unlike Day 3, the firewall now successfully intercepts and drops the traffic:
+Unlike Day 4, the firewall now successfully intercepts and drops the traffic:
 1. Attacker Perspective (Nmap Hang)
 
 ![Nmap Status](images/nmap_stuck.png
