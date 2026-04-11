@@ -33,7 +33,7 @@ Yesterday, the laboratory failed to block traffic because both VMs were in the s
 Unlike Day 4, the firewall now successfully intercepts and drops the traffic:
 1. Attacker Perspective (Nmap Hang)
 
-![Nmap Status](images/nmap_stuck.png
+![Nmap Status](images/nmap_stuck.png)
 
     The scan is stuck because pfSense is silently dropping every single probe. The attacker no longer sees open ports.
 
