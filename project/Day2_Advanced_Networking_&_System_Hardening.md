@@ -16,9 +16,7 @@ Today marks the completion of the core network infrastructure. I moved from basi
 ### 1. Final Connectivity Test
 I performed a ping test to Google's Public DNS (`8.8.8.8`). The results show **0% packet loss** and stable latency, proving the firewall rules are correctly allowing outbound traffic.
 
-![Connectivity Test](image_31a2a2.png) 
-*(Note: Replace image_31a2a2.png with your actual filename if you renamed it)*
-
+![Connectivity Test](project/images/image_project2_day2.png.png) 
 ### 2. System Integrity & Updates
 This image shows the successful execution of system triggers. The `update-grub` and `libc-bin` processes confirm that the Ubuntu workstation is fully optimized and secured.
 
