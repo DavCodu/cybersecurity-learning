@@ -39,7 +39,7 @@ Unlike Day 4, the firewall now successfully intercepts and drops the traffic:
 
 2. The Block in Action (pfSense Logs)
 
-![Firewall Logs](images/firewall_blocks.png)
+![Firewall Logs](images/pfsense_logs.png)
 
     Evidence: Multiple red "X" marks on the OPT1 interface prove the rule is firing correctly. Notice the USER_RULE identifier.
 
