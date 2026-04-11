@@ -46,11 +46,11 @@ The lab is built using **VirtualBox** and features an isolated internal network 
 Below are the technical proofs from the terminal:
 
 ### Network Scanning & OS Detection
-![Nmap Scan Result](images/image_31a2a2.png)
+![Nmap Scan Result](https://github.com/DavCodu/cybersecurity-learning/blob/main/project/images/image_project_day3.png?raw=true)
 *Scanning the target from the attacker's perspective.*
 
 ### System Updates & Maintenance
-![System Update](images/image_319e87.png)
+![System Update](https://github.com/DavCodu/cybersecurity-learning/blob/main/project/images/iamge_project_day3_2.png.png?raw=true)
 *Ensuring the target is patched and the kernel is optimized.*
 
 ---
