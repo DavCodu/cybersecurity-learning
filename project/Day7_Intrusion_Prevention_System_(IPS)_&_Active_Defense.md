@@ -23,6 +23,3 @@
 *Real-time detection of protocol manipulation and unauthorized scanning.*
 ![SSH Alerts](images/suricata_ssh_alerts.png)
 
-#### 3. Automated Blocking (IPS Action)
-*The attacker's IP is automatically quarantined, neutralizing the threat.*
-![Blocked Host](images/suricata_blocked_host.png)
