@@ -20,8 +20,7 @@ I performed a ping test to Google's Public DNS (`8.8.8.8`). The results show **0
 ### 2. System Integrity & Updates
 This image shows the successful execution of system triggers. The `update-grub` and `libc-bin` processes confirm that the Ubuntu workstation is fully optimized and secured.
 
-![System Upgrade Success](image_319e87.png)
-*(Note: Replace image_319e87.png with your actual filename)*
+![System Upgrade Success](https://github.com/DavCodu/cybersecurity-learning/blob/main/project/images/image_project_day2.png?raw=true)
 
 ---
 
