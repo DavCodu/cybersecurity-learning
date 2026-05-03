@@ -1,47 +1,42 @@
-# Wazuh SIEM Project Progress Report – Day3
+# Wazuh SIEM Project Progress Report – Day 3
 
 ## Objective
-The primary goal for today was to successfully deploy the **Wazuh Agent** on a **Kali Linux** endpoint and establish a secure connection with the **Wazuh Manager (Ubuntu)** to monitor security events in real-time.
+The primary goal for Day 3 was to successfully deploy the **Wazuh Agent** on a **Kali Linux** endpoint and establish a secure connection with the **Wazuh Manager (Ubuntu)**.
 
-## Actions Taken
+## 🛠️ Actions Taken
 
-### 1. Network Configuration & Troubleshooting
-* **VirtualBox Adapters:** Configured dual network adapters for both Ubuntu Manager and Kali Linux:
-    * **Adapter 1 (NAT):** For external internet access.
-    * **Adapter 2 (Host-Only):** For private communication between machines.
-* **Resolution:** Fixed "Network is unreachable" and "Temporary failure in name resolution" errors by:
-    * Restarting the `NetworkManager` service.
-    * Toggling the virtual cable connection in VirtualBox settings.
-    * Updating the Dashboard URL after the Ubuntu Manager's IP address changed.
+### 1. Network Troubleshooting
+* **Issue Identification:** Encountered "Network is unreachable" on Kali Linux and "Temporary failure resolving archive.ubuntu.com" on the Ubuntu Manager.
+* **Resolution:** 
+    * Fixed the VirtualBox Status Bar visibility to manage network adapters.
+    * Toggled the network connection to restore internet access for package downloads.
+    * Resolved a "Connection timed out" browser error by verifying and updating the Manager's IP address.
 
-### 2. Wazuh Agent Deployment (Kali Linux)
-* **Installation:** Downloaded and installed the agent using the `wget` automated script.
-* **Service Management:**
+### 2. Wazuh Agent Installation (Kali Linux)
+* **Deployment:** Successfully downloaded and installed the `wazuh-agent_4.7.5-1_amd64.deb` package.
+* **Service Configuration:**
     ```bash
     sudo systemctl daemon-reload
     sudo systemctl enable wazuh-agent
     sudo systemctl start wazuh-agent
     ```
-* **Verification:** Confirmed the agent status as `active (running)` via terminal.
+* **Status Check:** Confirmed that the agent is `active (running)` and reporting to the manager.
 
-### 3. Security Event Simulation
-* **Test Attack:** Performed a manual Brute Force simulation by attempting multiple failed logins (`su root`).
-* **Detection:** Successfully captured the unauthorized access attempts in the **Wazuh Dashboard** under the "Security Events" tab.
+### 3. Security Monitoring Verification
+* **Dashboard Access:** Navigated through the OpenSearch Dashboards menu to verify agent telemetry.
+* **Event Logging:** Confirmed that the Manager is successfully receiving security events from the Kali Linux agent.
 
 ## Results
-| Component | Status | Connectivity |
+| Component | Status | Documentation |
 | :--- | :--- | :--- |
-| **Wazuh Manager (Ubuntu)** | Active | Accessible via Host-Only IP |
-| **Wazuh Agent (Kali Linux)** | Active | Connected to Manager |
-| **Wazuh Dashboard** | Online | Visualizing real-time alerts |
+| **Kali Agent** | **Active** | |
+| **Manager Connection** | **Established** | |
+| **Network** | **Resolved** | |
 
-## Next Steps
-1.  **Vulnerability Detection:** Enable the vulnerability scanner in the manager's `ossec.conf`.
-2.  **Syscheck:** Configure File Integrity Monitoring (FIM) to track changes in sensitive directories.
-3.  **Reporting:** Generate a weekly summary report of all detected threats.
+## Next Steps (Day 4)
+* Enable **Vulnerability Detection** to scan for system weaknesses.
+* Configure **File Integrity Monitoring (FIM)** for sensitive directories.
 
-
-
-
-
+---
+*Report generated on: 2026-05-02*
 
