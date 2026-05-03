@@ -37,6 +37,6 @@ The primary goal for Day 3 was to successfully deploy the **Wazuh Agent** on a *
 * Enable **Vulnerability Detection** to scan for system weaknesses.
 * Configure **File Integrity Monitoring (FIM)** for sensitive directories.
 
----
-*Report generated on: 2026-05-02*
+
+
 
