@@ -3,7 +3,7 @@
 ## Objective
 The primary goal for Day 3 was to successfully deploy the **Wazuh Agent** on a **Kali Linux** endpoint and establish a secure connection with the **Wazuh Manager (Ubuntu)**.
 
-## 🛠️ Actions Taken
+## Actions Taken
 
 ### 1. Network Troubleshooting
 * **Issue Identification:** Encountered "Network is unreachable" on Kali Linux and "Temporary failure resolving archive.ubuntu.com" on the Ubuntu Manager.
